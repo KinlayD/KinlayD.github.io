@@ -9,13 +9,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
-    .headerimg {
-        float: left;
-        width: 400px;
-        shape-margin:20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
 </style>
 
 <body>
@@ -47,38 +40,16 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class= "col-lg-6">
-                <div class="wrapper">
-                    <img src="Assets/Resources/city_latitude_vs_cloudiness.png", class="headerimg">
-                    <p>
-                        This project uses images generated from data on city locations and their weather.  
-                        Using a uniform probability distribution, cities were obtained using randomised lat and lon coordinates.
-                        For each city: its maxiumum temperature, the level of cloudiness, wind speed and humidity were obtained.
-                        The following images show the relation between the distribution of cities and their weather,
-                        and following that the effect of each locations proximity to the equator.
-                    </p>
-                </div>
+    <div class="container d-flex h-100">
+        <div class="row justify-content-center align-self-center">
+            <div class= "col p-4">
+                <img src="Assets/Resources/city_latitude_vs_humidity.png">
+                <p>
+                    The scatter plot above expresses the relationship between a city's latitude and its current level of humidity.
+                    A significant proportion of the oberservations appear to cluster around 60 to 100% humidity.  
+                    This might be due to seasonal effects.
+                </p>
             </div>
-            <div class = "col-lg-6">
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <a href="cloudiness.html"><img class="img-fluid", src="Assets/Resources/city_latitude_vs_cloudiness.png" /></a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="humidity.html"><img class="img-fluid", src="Assets/Resources/city_latitude_vs_humidity.png" /></a>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <a href="maxtemp.html"><img class="img-fluid", src="Assets/Resources/city_latitude_vs_max_temp.png" /></a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="windspeed.html"><img class="img-fluid", src="Assets/Resources/city_latitude_vs_windspeed.png" /></a>
-                    </div>
-                </div>
-            </div>    
         </div>
     </div>
   
